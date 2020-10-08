@@ -19,6 +19,25 @@ header{
     height: 120px;
 }
 
+#headerImage{
+    float: left;
+    overflow: hidden;
+    height: 120px;
+}
+
+#headerImage img{
+    height: inherit;
+}
+
+#headerText{
+    padding-left: 500px;
+    padding-top: 10px;
+}
+
+#headerText p{
+    padding-left: 40px;
+}
+
 /* BARRA DE NAVEGACIÓN */
 
 #navbar ul{
@@ -36,7 +55,7 @@ header{
     color: #ffffff;
     display:block;
     text-align: center;
-    padding: 10px, 20px, 10px, 20px;
+    padding: 10px 20px 10px 20px;
 }
 
 /* CONTENIDO */
@@ -56,7 +75,6 @@ header{
 
 #divPhoto img{
     width: 100%;
-
 }
 
 #divGrades{
@@ -67,14 +85,62 @@ header{
     color: #000000;
 }
 
+#divGrades table{
+    margin: 0 auto;
+    width: 500px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#divGrades table #tableHeader{
+    background-color: #704C8F;
+    border-bottom: 3px solid black;
+}
+
+#divGrades table .tableDarkRow{
+    background-color: #808080;
+}
+
+#divGrades table th,
+#divGrades table td{
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
 #divTechs{
     border-bottom: 1px dashed #000000;
     height: 300px;
     background-color: #ffffff;
 }
 
+.divEachTech{
+    width: 250px;
+    float: left;
+    border-left: 1px solid #000000;
+    box-sizing: border-box;
+    text-align: center;
+    color: #000000;
+}
+
+#divRightTech{
+    border-right: 1px solid #000000;
+}
+
+.divEachTech img{
+    margin: 0 auto;
+    max-height: 260px;
+    opacity: 0.5;
+}
 
 /* FOOTER */
+
 footer{
     height: 100px;
+    position: relative;
+}
+
+#footerRightText{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
 }

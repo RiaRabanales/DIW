@@ -11,6 +11,9 @@
 <body>
 
     <header>
+        <div id="headerImage">
+            <img src="images/logo.png" alt="School Logo" />
+        </div>
         <div id="headerText">
             <h1>Computer School</h1>
             <p>Best computer school ever!</p>
@@ -36,12 +39,12 @@
         <div id="divGrades">
             <p>The Grades</p>
             <table>
-                <tr>
+                <tr id="tableHeader">
                     <th>Nom</th>
                     <th>NIF</th>
                     <th>Nota</th>
                 </tr>
-                <tr>
+                <tr class="tableDarkRow">
                     <td>Maria</td>
                     <td>1</td>
                     <td>10</td>
@@ -51,7 +54,7 @@
                     <td>2</td>
                     <td>10</td>
                 </tr>
-                <tr>
+                <tr class="tableDarkRow">
                     <td>Lluis</td>
                     <td>3</td>
                     <td>10</td>
@@ -65,7 +68,22 @@
         </div>
 
         <div id="divTechs">
-
+            <div class="divEachTech">
+                <img src="images/javascript.png" alt="Technology: JS" />
+                <p>Javascript</p>
+            </div>
+            <div class="divEachTech">
+                <img src="images/angular.png" alt="Technology: Angular" />
+                <p>Angular</p>
+            </div>
+            <div class="divEachTech">
+                <img src="images/php.png" alt="Technology: PHP" />
+                <p>PHP</p>
+            </div>
+            <div class="divEachTech" id="divRightTech">
+                <img src="images/html5.png" alt="Technology: HTML5" />
+                <p>HTML5</p>
+            </div>
         </div>
 
     </main>
@@ -73,7 +91,7 @@
     <footer>
         <span>yo@cifpfbmoll.eu</span>
         <br>
-        <span>DESIGN OF WEB INTERFACES</span>
+        <span id="footerRightText">DESIGN OF WEB INTERFACES</span>
     </footer>
 
 </body>

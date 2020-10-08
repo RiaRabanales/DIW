@@ -1,4 +1,9 @@
 /* GENERAL */
+
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: Verdana;
     font-size: 13px;
@@ -14,7 +19,8 @@ footer{
     color: #ffffff;
 }
 
-/* HEADER */
+/* CABECERA */
+
 header{
     height: 120px;
 }
@@ -46,15 +52,17 @@ header{
     padding: 0;
     overflow: hidden;
     background-color: #ffffff;
+    height: 50px;
 }
 
 #navbar li{
-    height: 50px;
+    height: inherit;
     background-color: #9376AC;
     float: left;
     color: #ffffff;
     display:block;
     text-align: center;
+    font-size: 17px;
     padding: 10px 20px 10px 20px;
 }
 
@@ -85,6 +93,12 @@ header{
     color: #000000;
 }
 
+#divGrades p{
+    font-weight: bold;
+    padding-top: 25px;
+    text-decoration: underline;
+}
+
 #divGrades table{
     margin: 0 auto;
     width: 500px;
@@ -103,13 +117,13 @@ header{
 
 #divGrades table th,
 #divGrades table td{
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 #divTechs{
     border-bottom: 1px dashed #000000;
-    height: 300px;
+    height: 299px;
     background-color: #ffffff;
 }
 
@@ -117,7 +131,6 @@ header{
     width: 250px;
     float: left;
     border-left: 1px solid #000000;
-    box-sizing: border-box;
     text-align: center;
     color: #000000;
 }
@@ -128,8 +141,14 @@ header{
 
 .divEachTech img{
     margin: 0 auto;
-    max-height: 260px;
+    padding-top: 10px;
+    width: 240px;
     opacity: 0.5;
+}
+
+.divEachTech p{
+    padding-top: 5px;
+    font-weight: bold;
 }
 
 /* FOOTER */

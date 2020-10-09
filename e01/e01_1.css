@@ -23,6 +23,7 @@ footer{
 
 header{
     height: 120px;
+    position: relative;
 }
 
 #headerImage{
@@ -34,8 +35,9 @@ header{
 }
 
 #headerText{
-    padding-left: 500px;
-    padding-top: 10px;
+    position: absolute;
+    left: 500px;
+    top: 10px;
 }
 
 #headerText p{
@@ -58,7 +60,7 @@ header{
     background-color: #9376AC;
     float: left;
     color: #ffffff;
-    display:block;
+    display: block;
     text-align: center;
     font-size: 17px;
     padding: 10px 20px 10px 20px;
@@ -78,10 +80,12 @@ header{
     border-bottom: 1px dashed #000000;
     height: 300px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 #divPhoto img{
-    width: 100%;
+    width: 1000px;
+    margin-top: -140px;
 }
 
 #divGrades{

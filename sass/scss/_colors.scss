@@ -1,0 +1,19 @@
+body,
+p a,
+#body div.header ul,
+#footer p,
+#page {
+    background: $color_green;
+}
+
+p a:hover {
+    background: $color_greenlight;
+}
+
+#body {
+	background: $color_white;
+}
+
+#header > ul {
+    background: $color_grey;
+}
